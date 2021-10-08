@@ -108,6 +108,7 @@ body{
 #hotell-info{
     position: absolute;
     top: 40%;
+    color: white;
 }
 #timer{
     position: absolute;

@@ -42,7 +42,7 @@ skytBtn.addEventListener("click", () => {
     }else{
         nullStill = true;
         nullStillContainer.style.display = "flex";
-        hotellInfo.innerHTML = `Du skøyt, men fant ikke.`;
+        hotellInfo.innerHTML = `Du skjøt, men fant ikke.`;
     }
 });
 
