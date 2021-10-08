@@ -5,6 +5,8 @@ var nullStillBtn        = document.getElementById("nullstill-drap");
 var hotellInfo          = document.getElementById("hotell-info");
 var timerCount          = document.getElementById("timer");
 
+var interval;
+
 var insideHotel = true;
 
 var nullStill= false;
@@ -58,21 +60,6 @@ nullStillBtn.addEventListener("mousedown", () => {
     }
 });
 
-
-// interval variable
-var interval;
-// "btn" is the element you want to click to start/stop it
-btn.addEventListener('click', function() {
-  if (interval) {
-    clearInterval(interval);
-    return;
-  }
-  var startTime = new Date();
-  interval = setInterval(function() {
-    // "timer" is the element showing the time
-    timer.innerHTML = (new Date() - startTime) / 1000;
-  });
-});
 
 
 
