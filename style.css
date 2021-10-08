@@ -1,0 +1,117 @@
+@font-face {
+    font-family: trajanpro;
+    src: url(Trajan\ Pro.ttf);
+  }
+
+body{
+    background-color: rgb(20, 20, 20);
+    height: 80vh;
+    font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+
+}
+#hotell-btn-center{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 99vh;
+    width: 99%;
+}
+
+#navn-skyt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: row;
+    height: 99vh;
+    width: 99%;
+}
+
+#hotel-btn{
+    background-color: #3e7600;
+    height: 18px;
+    width: 161px;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: #d1d1d1;
+    border: 1px solid #999999;
+    user-select: none;
+    z-index: 10;
+}
+
+#hotel-timer{
+    font-size: 0.7em;
+}
+
+
+#draps-navn{
+    background-color: rgb(65, 65, 65);
+    border: 1px solid rgb(175, 175, 175);
+    width: 105px;
+    height: 23px;
+    margin: 105px 0px 0px 5px;
+    font-size: 14px;
+    color: white;
+    padding: 4px 0px 0px 1px;
+}
+
+#skyt-btn{
+    display: flex;
+    background-color: #3e7600;
+    border: 1px solid #999999;
+    color: white;
+    font-size: 13px;
+    width: 58px;
+    height: 29px;
+    justify-content: center;
+    align-items: center;
+    margin: 105px 7px 0px 5px;
+    cursor: default;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+}
+
+#nullstill-drap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #477998;
+    color: white;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    cursor: pointer;
+    width: 167px;
+    height: 30px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+    margin: 105px 0px 0px 0px;
+    
+}
+
+#nullstill-container{
+    z-index: 9;
+    position: absolute;
+    height: 99vh;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hotell-info{
+    position: absolute;
+    top: 40%;
+    color: white;
+}
+#timer{
+    position: absolute;
+    top: 30%;
+    color: white;
+}
