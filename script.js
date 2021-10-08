@@ -11,7 +11,7 @@ var nullStill= false;
 
 nullStillContainer.style.display = "none";
 
-hotelBtn.addEventListener("click", () => {
+hotelBtn.addEventListener("mousedown", () => {
     if (interval) {
         interval = clearInterval(interval);
         return;
@@ -24,7 +24,7 @@ hotelBtn.addEventListener("click", () => {
     });
 
 
-hotelBtn.addEventListener("click", () => {
+hotelBtn.addEventListener("mousedown", () => {
 	if (insideHotel == true){
         insideHotel = false;
         hotelBtn.style.backgroundColor = "#550000";
@@ -34,7 +34,7 @@ hotelBtn.addEventListener("click", () => {
     }
 });
 
-skytBtn.addEventListener("click", () => {
+skytBtn.addEventListener("mousedown", () => {
     if (insideHotel == true){
         hotellInfo.innerHTML = `Du må gå ut av hotell for å skyte!`;
 
@@ -47,7 +47,7 @@ skytBtn.addEventListener("click", () => {
 });
 
 
-nullStillBtn.addEventListener("click", () => {
+nullStillBtn.addEventListener("mousedown", () => {
     if (insideHotel == true){
         hotellInfo.innerHTML = `Du må gå ut av hotell for å nulle!`;
 
