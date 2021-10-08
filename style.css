@@ -54,10 +54,10 @@ body{
     border: 1px solid rgb(175, 175, 175);
     width: 105px;
     height: 23px;
-    margin: 105px 3px 0px 5px;
+    margin: 105px 0px 0px 5px;
     font-size: 14px;
     color: white;
-    padding: 4px 0px 0px 2px;
+    padding: 4px 0px 0px 1px;
 }
 
 #skyt-btn{
@@ -91,7 +91,7 @@ body{
     height: 30px;
     padding: 2px;
     border: 1px solid #cccccc;
-    margin: 115px 0px 0px 0px;
+    margin: 105px 0px 0px 0px;
     
 }
 
