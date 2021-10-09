@@ -9,7 +9,7 @@ var interval;
 
 var insideHotel = true;
 
-var nullStill= false;
+var nullStill = false;
 
 nullStillContainer.style.display = "none";
 
@@ -27,7 +27,7 @@ hotelBtn.addEventListener("mousedown", () => {
 
 
 hotelBtn.addEventListener("mousedown", () => {
-	if (insideHotel == true){
+	if (insideHotel){
         insideHotel = false;
         hotelBtn.style.backgroundColor = "#550000";
     }else{
@@ -37,9 +37,8 @@ hotelBtn.addEventListener("mousedown", () => {
 });
 
 skytBtn.addEventListener("mousedown", () => {
-    if (insideHotel == true){
+    if (insideHotel){
         hotellInfo.innerHTML = `Du må gå ut av hotell for å skyte!`;
-
 
     }else{
         nullStill = true;
@@ -50,7 +49,7 @@ skytBtn.addEventListener("mousedown", () => {
 
 
 nullStillBtn.addEventListener("mousedown", () => {
-    if (insideHotel == true){
+    if (insideHotel){
         hotellInfo.innerHTML = `Du må gå ut av hotell for å nulle!`;
 
     }else{
@@ -59,8 +58,5 @@ nullStillBtn.addEventListener("mousedown", () => {
         hotellInfo.innerHTML = `Du nullstilte!`;
     }
 });
-
-
-
 
 
