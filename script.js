@@ -4,6 +4,8 @@ var nullStillContainer  = document.getElementById("nullstill-container");
 var nullStillBtn        = document.getElementById("nullstill-drap");
 var hotellInfo          = document.getElementById("hotell-info");
 var timerCount          = document.getElementById("timer");
+var hotelBtnTime        = document.getElementById("hotel-timer");
+var hotelBtnSjekkUt     = document.getElementById("hotel-btn-sjekk-ut");
 
 var interval;
 var insideHotel = true;
@@ -31,12 +33,16 @@ hotelBtn.addEventListener("mousedown", () => {
         setTimeout(function () {
             insideHotel = false;
             hotelBtn.style.backgroundColor = "#550000";
+            hotelBtnSjekkUt.innerHTML = `Book hotell`;
+            hotelBtnTime.innerHTML = ``;
           }, 70)
 
     }else{
         setTimeout(function () {
             insideHotel = true;
             hotelBtn.style.backgroundColor = "#3e7600";
+            hotelBtnSjekkUt.innerHTML = `Sjekk ut`;
+            hotelBtnTime.innerHTML = `(69 t 69 m)`;
           }, 80)
 
     }
