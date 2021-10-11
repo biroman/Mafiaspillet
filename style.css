@@ -3,12 +3,17 @@
     src: url(Trajan\ Pro.ttf);
   }
 
-body{
-    background-color: rgb(20, 20, 20);
-    height: 80vh;
-    font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
 
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+    height: 98vh;
+    font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
 }
+
+
+
 #hotell-btn-center{
     display: flex;
     position: absolute;
@@ -112,6 +117,25 @@ body{
 }
 #timer{
     position: absolute;
-    top: 30%;
+    top: 60%;
     color: white;
 }
+
+#krim-side{
+    display: flex;
+    position: absolute;
+    align-self: center;
+    color: white;
+    top: 70%;
+    font-size: 12px;
+    z-index: 99;
+}
+
+/*#drap-varsel{
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    border: 2px solid red;
+    width: 20%;
+    height: 20%
+}*/
